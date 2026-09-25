@@ -474,7 +474,7 @@ h3.srchead .srcsub { font-family:var(--font-mono); font-size:11px; letter-spacin
 </div>
 <div class="trule"></div>
 <div class="tcmd">C:\KAZU\MANUAL&gt; DIR /MANUAL</div>
-<div class="tdir">Directory of /KAZU/MANUAL <span class="tcount">12 SECTIONS</span></div>
+<div class="tdir">Directory of /KAZU/MANUAL <span class="tcount">14 SECTIONS</span></div>
 <nav class="idx">
   <a href="#overview"><span class="n">01</span><span class="fn">SYSTEM OVERVIEW</span></a>
   <a href="#interface"><span class="n">02</span><span class="fn">INTERFACE MAP</span></a>
@@ -489,6 +489,7 @@ h3.srchead .srcsub { font-family:var(--font-mono); font-size:11px; letter-spacin
   <a href="#presets"><span class="n">11</span><span class="fn">PRESETS &amp; STATE</span></a>
   <a href="#fxref"><span class="n">12</span><span class="fn">FX REFERENCE</span></a>
   <a href="#boot"><span class="n">13</span><span class="fn">BOOT / LICENSE / UPDATES</span></a>
+  <a href="#changelog"><span class="n">14</span><span class="fn">CHANGELOG</span></a>
 </nav>
 <div class="tprompt">C:\KAZU\MANUAL&gt; <span class="cursor"></span></div>
 </header>
@@ -545,6 +546,7 @@ h3.srchead .srcsub { font-family:var(--font-mono); font-size:11px; letter-spacin
   <table class="ctl">
     <tr><th>GESTURE</th><th>EFFECT</th></tr>
     <tr><td><span class="chip">DRAG ↑↓</span></td><td class="desc">Edit any knob or value — vertical drag, full range over ~150&nbsp;px of motion.</td></tr>
+    <tr><td><span class="chip">SHIFT + DRAG</span></td><td class="desc">Make FX values and effect output gain adjustments at one tenth of the usual speed. Press or release Shift during a drag to change sensitivity without a value jump. Percentage values show tenths while fine-adjusting; synced timing and named choices retain their valid steps.</td></tr>
     <tr><td><span class="chip">DOUBLE-CLICK</span></td><td class="desc">Restore a parameter to its default value. On a macro name: rename. In the graph editor: remove a node.</td></tr>
     <tr><td><span class="chip">HOVER</span></td><td class="desc">With <img class="ctlimg ctlimg-in" alt="Tooltips" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QMzaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSAxMC4wLWMwMDAgNzkuZDIwZTQ2NjMwLCAyMDI1LzEyLzA5LTAyOjExOjIzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjcuMTAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RURDMTYxNENBMTBFMTFGMUI5M0Q4NEIzQ0M3QkFEMEUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkQ3NUEwOEFBMTBFMTFGMUI5M0Q4NEIzQ0M3QkFEMEUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFREMxNjE0QUExMEUxMUYxQjkzRDg0QjNDQzdCQUQwRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFREMxNjE0QkExMEUxMUYxQjkzRDg0QjNDQzdCQUQwRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAICAgICAgICAgID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"> on, every control explains itself in place.</td></tr>
     <tr><td><span class="chip">RETURN / ESC</span></td><td class="desc">Confirm / cancel any text entry (SAVE AS, macro rename).</td></tr>
@@ -1011,6 +1013,57 @@ h3.srchead .srcsub { font-family:var(--font-mono); font-size:11px; letter-spacin
     (<span class="uistr">KAZU // LICENSE CONTROL</span>).</li>
     <li><b>UPDATES</b> — KAZU checks for new builds and raises the update terminal when one is
     available; download or dismiss from there.</li>
+  </ul>
+
+  <a class="toplink" href="#top">▲ RETURN TO INDEX</a>
+</section>
+
+<!-- ══════════════════ 14 CHANGELOG ══════════════════ -->
+<section id="changelog">
+  <div class="sechead">
+    <div class="syspath">/KAZU/MANUAL/14_CHANGELOG</div>
+    <h2><span class="tag">14 //</span> CHANGELOG</h2>
+    <hr>
+  </div>
+
+  <h3>0.1.586 — FINER FX ADJUSTMENTS</h3>
+  <ul class="plain">
+    <li>Hold <b>Shift while dragging</b> FX values or effect output gain for <b>10× finer adjustment</b>.
+    Press or release Shift during a drag to change sensitivity without a value jump.</li>
+    <li>Percentage readouts show tenths during fine adjustment. Synced timing and named choices
+    retain their valid steps, and double-click still restores the default value.</li>
+    <li>Added hover hints and <a href="#interface">manual instructions</a> for Shift-drag.
+    Active parameter readouts show the value being edited even when modulation data is stale.</li>
+  </ul>
+
+  <h3>0.1.580 — MODULATION HOVER SCROLLING</h3>
+  <ul class="plain">
+    <li>Turning <b>ANIMATIONS</b> off now also stops modulation-source hover autoscrolling,
+    keeping the source list in place while browsing parameters.</li>
+  </ul>
+
+  <h3>0.1.579 — RELIABLE UNDO / REDO</h3>
+  <ul class="plain">
+    <li><b>Randomize</b> and <b>Animate</b> actions now undo and redo in one step,
+    for individual effects and the entire rack.</li>
+    <li>Preserved edits made immediately before these actions and kept already-applied
+    Animate changes undoable when the editor closes before the full batch finishes.</li>
+  </ul>
+
+  <h3>0.1.578 — NUENDO SCANNING FIX</h3>
+  <ul class="plain">
+    <li>Fixed a Windows VST3 shutdown hang that could make Nuendo's plugin scanner time out
+    or blocklist KAZU. Successful scanning was verified in Nuendo 15.0.30.</li>
+    <li><b>SPECTER</b> now prepares its tables on first use. Its first insertion or a preset
+    load using it may pause for a few seconds while preparation completes.</li>
+  </ul>
+
+  <h3>DOWNLOADS &amp; UPDATES</h3>
+  <ul class="plain">
+    <li>Added a standalone <b>Windows VST3 ZIP</b> alongside the EXE installer,
+    initially as a supplement to 0.1.577.</li>
+    <li>Published 0.1.578 through <b>public GitHub downloads</b> and changed the updater's
+    platform links to point directly to the macOS, Windows, and Linux packages.</li>
   </ul>
 
   <a class="toplink" href="#top">▲ RETURN TO INDEX</a>
