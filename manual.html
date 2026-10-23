@@ -1076,16 +1076,26 @@ h3.srchead .srcsub { font-family:var(--font-mono); font-size:11px; letter-spacin
 
   <h3>0.1.700 — NEW EFFECTS WAVE</h3>
   <ul class="plain">
-    <li>Thirteen new effects: <b>LOSSY</b>, <b>HOWL</b>, <b>TRIAD</b>, <b>WARP</b>, <b>STILLS</b>, <b>STRUM</b>,
-    <b>LOOP</b>, <b>CONTRAST</b>, <b>STRINGS</b>, <b>SEPARATE</b>, <b>FLYBY</b>, <b>REEL</b> and <b>TRANSIENT</b>
-    (see the <a href="#fxref">FX reference</a>).</li>
-    <li><b>BITROT</b> adds the CODC transform-codec and STOC stochastic quantizer models.
-    <b>CIRCUIT BEND</b> adds BUS width and CLOCK starvation. <b>PLASMA</b> adds HOLD and CHAOS.
-    <b>WAVEFOLDER</b> adds MODEL: 259, Serge, Lockhart and sine-wrap folds.</li>
-    <li>New <b>LATENCY COMP</b> main-menu switch for the FFT effects' host latency.
-    The master limiter no longer adds latency when bypassed.</li>
-    <li>New <b>SCREEN TEXTURE</b> main-menu toggle for the dot-grid overlay, off by default.</li>
+    <li><b>Distortion:</b> LOSSY (codec degradation: band starvation, packet loss, repeat-fill) and HOWL (tuned feedback instrument).</li>
+    <li><b>Pitch:</b> TRIAD (scale-locked harmoniser with staggered voices), WARP (frequency-axis remap) and STILLS (clocked spectral snapshots).</li>
+    <li><b>Time:</b> STRUM (onset fragments re-sequenced to the clock, in key) and LOOP (accumulating micro-looper with overdub, stamped modifiers and a scan memory).</li>
+    <li><b>Filter:</b> CONTRAST (spectral dynamics), SEPARATE (tonal / noise / hits split) and STRINGS (coupled sympathetic strings, struck or bowed).</li>
+    <li><b>Modulate:</b> FLYBY (Doppler motion and rotor).</li>
+    <li><b>Delay:</b> REEL (multi-head tape-loop delay).</li>
+    <li><b>Dynamics:</b> TRANSIENT (attack / sustain designer).</li>
+    <li><b>Distortion:</b> BITROT adds CODC (transform codec) and STOC (stochastic) models. CIRCUIT BEND adds BUS and CLOCK. EXCITE adds SUB. MIRROR adds TRAIL PITCH. PLASMA adds HOLD and CHAOS. TAPE adds AGE and DROPOUT. UNDERTOW adds DIVIDE B, BLEND, LOCK and scale snap. WAVEFOLDER adds MODEL (259, Serge, Lockhart, sine-wrap).</li>
+    <li><b>Pitch:</b> PITCH SHIFT adds LADDER and FORMANT. FREQ SHIFT adds pitch-tracked shifting. MAGNET adds FIELD and DRIFT. MOUTH adds GLIDE and CHORD. VOCODER adds FREEZE and CHORD. SPEAK adds WORD. FORMANT SHIFT adds SOURCE (impose the sidechain's envelope). CRYSTAL adds STRUM, EXCITE, ROTATE and SPREAD.</li>
+    <li><b>Time:</b> STRETCH adds TRIG. SCANNER adds PITCH and SPRAY. VARISPEED adds BRAKE, CURVE and SKIP. CHOPPER adds PITCH, REVERSE, GATE and RATCHET. SLOW DOWN adds LOCK. STUTTER adds RAMP and DECAY. WENDY adds scale snap.</li>
+    <li><b>Filter:</b> CHROMA adds SCAN. FORMANT adds SEQ and GLIDE. LIQUIFY adds DRIVE and TRAIL. MODAL adds FOLLOW, STRETCH, BOW and scale snap. PRISM adds FM and DRIFT. SMEAR adds DIRECTION and HOLD. TOOTH adds PLUCK and DAMP. TRANSMIT adds DIAL. VESPER adds ENV, ATTACK and RELEASE.</li>
+    <li><b>Modulate:</b> CHORUS adds MODE (Classic, Dimension D, Juno). CLANG adds FDBK. FLANGER and PHASER add BARBER. FISSION adds RATIO and CHAOS. ORBIT adds DOPPLER. TREMOR adds SIDECHAIN.</li>
+    <li><b>Delay:</b> SPIRAL adds AGE, HEAD, HALO and SPACING. SPECTRAL DELAY adds FZ BAND and FZ SPLIT. CADENCE adds PITCH, PROB, SKEW and a BOUNCE pattern. GRANULAR DELAY adds TRIG, REVERSE, RETUNE and CHORD.</li>
+    <li><b>Reverb:</b> AETHER adds INTERVAL, GATE and REVERSE. DATTORRO adds MOD and FREEZE. DRIP adds CRASH, TENSION and PICKUP. GRANUVERB adds scale snap.</li>
+    <li><b>Dynamics:</b> GATE adds KEY and DUCK. MANGLE adds SIDECHAIN. SQUASH adds BANDS and SOLO. UTILITY adds ROTATE, MONO and VELVET.</li>
+    <li>Every clocked modulation source (LFO, RANDOM, GEN, MAP, GRAPH) can run in triplets.</li>
+    <li>New LATENCY COMP main-menu switch for the FFT effects' host latency. The master limiter no longer adds latency when bypassed.</li>
+    <li>New SCREEN TEXTURE main-menu toggle for the dot-grid overlay, off by default.</li>
     <li>Refined the Load FX overlay layout and effect descriptions.</li>
+    <li>Right-click pastes into the license key field, for Windows hosts that swallow Ctrl+V. License saving is more robust and reports why a save failed.</li>
     <li>Fixed a Windows hang on host exit, seen in FL Studio.</li>
   </ul>
 
